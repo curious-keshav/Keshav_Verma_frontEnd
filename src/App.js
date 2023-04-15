@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import List from "./components/List";
+import Navbar from "./components/Navbar";
+import Answer from "./components/Answer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+
+  const [mode, setMode] = useState('light');
+  const toggleMode = () => {
+    if (mode === 'dark') {
+      setMode('light');
+      document.body.style.backgroundColor = '#f8f9fa';
+    } else {
+      setMode('dark');
+      document.body.style.backgroundColor = '#212529';
+    }
+  }
+  
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+        <div className="App">
+
+          <Routes>
+            <Route path="/answer" element={[<Navbar title="SteelEye Assignment" mode={mode} toggleMode={toggleMode} heading={""}/>, <Answer mode={mode} />]} />
+            <Route path="/" element={[<Navbar title="SteelEye Assignment" mode={mode} toggleMode={toggleMode} heading={"Output for this Assignment"}/>, <div className="container">
+
+              <List  mode={mode} />
+            </div>]} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 

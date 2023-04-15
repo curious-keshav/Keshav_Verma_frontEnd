@@ -1,0 +1,13 @@
+
+.container2{
+    background-color: #252025;
+    color: white;
+    border-radius: 20px;
+    max-width: 500px;
+    padding:8px;
+    margin: auto;
+    border: 2px solid black;
+    
+}
+
+.cont{display: flex;}
