@@ -97,7 +97,7 @@ const WrappedListComponent = ({ items }, props) => {
 
     return (<>
 
-        <ul style={{ textAlign: "left", marginTop: '40px' }}>
+        <ul style={{ textAlign: "left", marginTop: '40px',paddingRight:'35px' }}>
             {items.map((item, index) => (
                 <SingleListItem
                     key={index}        //added
@@ -116,12 +116,12 @@ const WrappedListComponent = ({ items }, props) => {
             marginRight: 'auto',
             padding: '10px',
             display: 'flex',
-            justifyContent: 'space-between'
+            justifyContent: 'center'
         }}>
 
-            <button type="button" onClick={onClickSingle} class="btn btn-success mx-2">Single</button>
-            <button type="button" onClick={onClickMultiple} class="btn btn-danger mx-2">Multiple</button>
-            <button type="button" onClick={onClickClear} class="btn btn-warning mx-2">Clear</button>
+<button type="button" onClick={onClickSingle} id='singleBtn' style={currBtn==='single'?{border:'6px solid black'}:{border:'none'}} class="btn btn-success mx-2">Single</button>
+            <button type="button" onClick={onClickMultiple} style={currBtn==='multiple'?{border:'6px solid black'}:{border:'none'}} id='multiBtn'class="btn btn-danger mx-2">Multiple</button>
+            <button type="button" onClick={onClickClear} style={currBtn==='clear'?{border:'6px solid black'}:{border:'none'}} id='clearBtn'class="btn btn-warning mx-2">Clear</button>
         </div>
         <div className="cont">
             <div class="container2 my-3">
