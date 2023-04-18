@@ -1,3 +1,21 @@
+SteelEye - Frontend Developer Assignment
+
+Respected Sir/Ma'am,
+
+I am pleased to inform you that I have completed my assignment and have incorporated all the necessary changes as per the requirements. I have implemented additional features in this web application, along with a user-friendly graphical user interface (UI). I am eagerly looking forward to receiving your valuable feedback.
+
+Live Link: https://keshav-steeleye.netlify.app/
+
+Drive Link: https://docs.google.com/document/d/1-HcKmwfLxQ8t9yHdmON-2fR3OncHS_YoLr-54VlZdys/edit?usp=sharing
+
+Sincerely,
+Keshav Verma
+BTech IT
+Reg ID: 12011798
+Email: keshavverma532@gmail.com
+Phone No: 7973068960
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
